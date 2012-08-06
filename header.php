@@ -32,6 +32,12 @@
         <div id="header">
             Header Goes Here
         </div>
-        <div id="global-nav">
-            global nav
+        <div id="global-nav" role="navigation">
+            <?php 
+                wp_nav_menu(array(
+                    'container'         => '',
+                    'theme_location'    => 'primary'
+                )); 
+            ?>
+            <div class="clearfix"></div>
         </div>

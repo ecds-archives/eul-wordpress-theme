@@ -29,9 +29,15 @@
 </head>
 <body <?php body_class(); ?>>
     <div id="container">
-        <div id="header">
+        <header id="header">
             Header Goes Here
-        </div>
-        <div id="global-nav">
-            global nav
+        </header>
+        <div id="global-nav" role="navigation">
+            <?php 
+                wp_nav_menu(array(
+                    'container'         => false,
+                    'theme_location'    => 'primary'
+                )); 
+            ?>
+            <div class="clearfix"></div>
         </div>

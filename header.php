@@ -29,13 +29,13 @@
 </head>
 <body <?php body_class(); ?>>
     <div id="container">
-        <div id="header">
+        <header id="header">
             Header Goes Here
-        </div>
+        </header>
         <div id="global-nav" role="navigation">
             <?php 
                 wp_nav_menu(array(
-                    'container'         => '',
+                    'container'         => false,
                     'theme_location'    => 'primary'
                 )); 
             ?>

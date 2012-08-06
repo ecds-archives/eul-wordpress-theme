@@ -1,3 +1,8 @@
+body {
+    font-family: 'Trebuchet MS', Verdana, sans-serif;
+    font-size: 12px;
+}
+
 #container {
     width: 1000px;
     margin: auto;
@@ -5,7 +10,7 @@
 
 #header,
 #global-nav,
-#content,
+#content-wrapper,
 #footer {
     width: 980px;
     margin: auto;
@@ -17,15 +22,59 @@
     margin: auto;
 }
 
+/**
+ * header navigation styles
+ *
+ */
 #global-nav {
     background: #d2962d; /* TODO: make theme option somehow */;
+    color: #ffffff;
 }
 
-#global-nav .menu ul li {
+#global-nav .menu {
+    width: 95%;
+    margin: auto;
+}
+    
+#global-nav .menu-item { /* Set text properties on the li to make use of the .current-menu-item and .menu-item :hover*/
+    font-size: .75em;
+    color: #ffffff;
+    text-shadow: #734D00 1px 1px 2px;
+    text-transform: uppercase;
+    font-weight: normal;
+    
     float: left;
-    padding: 5px 15px;
+
+    border-right: 1px solid #997300;
 }
 
+#global-nav .menu-item:hover,
+#global-nav .current-menu-item {
+    background: #ffffff;
+    color: black;
+}
+
+#global-nav .first-menu-item {
+    border-left: 1px solid #997300;
+}
+
+#global-nav a {
+    color: inherit;
+    text-decoration: none;
+    display:block;      /* blocking element to allow padding */
+    padding: 8px 15px 8px 15px;
+}
+
+/**
+ * Main content styles
+ */
+#content-wrapper {
+    width: 960px;
+    padding: 10px;
+}
+/**
+ * footer styles
+ */
 #footer {
     background: #aaa;
 }

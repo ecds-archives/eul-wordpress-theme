@@ -1,0 +1,26 @@
+#container {
+    width: 980px;
+    margin: auto;
+}
+
+#header {
+    height: 111px;
+    background: #ccc;
+    margin: auto;
+}
+
+#global-nav {
+    background: #ddd;
+}
+
+#footer {
+    background: #aaa;
+}
+
+#header,
+#global-nav,
+#content,
+#footer {
+    width: 960px;
+    margin: auto;
+}

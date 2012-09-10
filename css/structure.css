@@ -6,6 +6,7 @@ body {
 #page_wrapper {
     width: 1000px;
     margin: 0 auto;
+    background: url(http://web.library.emory.edu/sites/all/themes/libraryglobal/images/wrapper.gif) repeat-y;
 }
 
 /**
@@ -112,7 +113,30 @@ body {
 
  #page_wrapper #main_content {
     width: 940px;
+    margin: 20px auto;
+}
+
+/**
+ * Footer
+ */
+
+ #page_wrapper footer {
+    width: 980px;
     margin: 0 auto;
+ }
+
+ #page_wrapper footer #share_bar {
+    height: 42px;
+    background-color: #CC9900;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid #997300;
+    border-right: 1px solid #997300;
+ }
+
+ #page_wrapper footer #links {
+    background-color: #002878;
+    height: 120px;
  }
 
 /*#container {

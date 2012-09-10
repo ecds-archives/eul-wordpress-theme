@@ -4,10 +4,14 @@
  *
  */
 ?>
-        <div id="footer">
-            footer is here
-        </div><!-- #footer -->
-        <?php wp_footer(); ?>
-    </div><!-- #container -->
+        <footer>
+            <div id="share_bar">
+
+            </div>
+            <div id="links">
+
+            </div>
+        </footer>
+    </div><!-- /#page_wrapper -->
 </body>
 </html>

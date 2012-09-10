@@ -1,9 +1,150 @@
 body {
-    font-family: 'Trebuchet MS', Verdana, sans-serif;
+    font-family: Verdana, Arial, sans-serif;
     font-size: 12px;
 }
 
-#container {
+#page_wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    background: url(http://web.library.emory.edu/sites/all/themes/libraryglobal/images/wrapper.gif) repeat-y;
+}
+
+/**
+ * global navigation w/ external links
+ */
+#global_nav {
+    height: 20px;
+    background-color: #012778;
+    margin-bottom: 2px;
+}
+
+#global_nav .links {
+    width: 980px;
+    margin: auto;
+}
+
+#global_nav .links li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#global_nav .links a {
+    height: 16px;
+    padding: 4px 12px 0 12px;
+
+    display: block;
+
+    color: #CCCCCC;
+    font-size: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#global_nav .links a:hover {
+    background: #2E58AC;
+}
+
+#global_nav .links .last {
+    float: right;
+}
+
+/** 
+ * Header Styles
+ */
+#page_wrapper header.page-header {
+    width: 980px;
+    height: 108px;
+
+    margin:0 auto;
+
+    background-color: #002878;
+}
+
+#page_wrapper header.page-header #logo {
+    display: inline-block;
+    margin: 27px 0 0 25px;
+}
+
+/**
+ *  Main naviation styles
+ */ 
+#page_wrapper #main_nav {
+    width: 978px;
+    height: 27px;
+
+    margin: 0 auto;
+    padding: 0;
+
+    border: 1px solid black;
+    border-left: 1px solid #997300;
+    border-right: 1px solid #997300;
+
+    background-color: #CC9900;
+}
+
+#page_wrapper #main_nav ul {
+    margin: 0 20px;
+}
+
+#page_wrapper #main_nav li {
+    float: left;
+    width: 135px;
+    height: 28px;
+}
+
+#page_wrapper #main_nav li a {
+    height: 28px;
+    display: block;
+
+    padding-top: 8px;
+
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#page_wrapper #main_nav ul>li:first-of-type {
+    background-color: white;
+    border: none;
+    border-left: 1px solid #997300;
+    border-right: 1px solid #997300;
+}
+
+/**
+ *  Main Content Area
+ */
+
+ #page_wrapper #main_content {
+    width: 940px;
+    margin: 20px auto;
+}
+
+/**
+ * Footer
+ */
+
+ #page_wrapper footer {
+    width: 980px;
+    margin: 0 auto;
+ }
+
+ #page_wrapper footer #share_bar {
+    height: 42px;
+    background-color: #CC9900;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid #997300;
+    border-right: 1px solid #997300;
+ }
+
+ #page_wrapper footer #links {
+    background-color: #002878;
+    height: 120px;
+ }
+
+/*#container {
     width: 1000px;
     margin: auto;
 }
@@ -22,12 +163,9 @@ body {
     margin: auto;
 }
 
-/**
- * header navigation styles
- *
- */
+
 #global-nav {
-    background: #d2962d; /* TODO: make theme option somehow */;
+    background: #d2962d;
     color: #ffffff;
 }
 
@@ -36,7 +174,7 @@ body {
     margin: auto;
 }
     
-#global-nav .menu-item { /* Set text properties on the li to make use of the .current-menu-item and .menu-item :hover*/
+#global-nav .menu-item { 
     font-size: .75em;
     color: #ffffff;
     text-shadow: #734D00 1px 1px 2px;
@@ -61,21 +199,17 @@ body {
 #global-nav a {
     color: inherit;
     text-decoration: none;
-    display:block;      /* blocking element to allow padding */
+    display:block;   
     padding: 8px 15px 8px 15px;
 }
 
-/**
- * Main content styles
- */
+
 #content-wrapper {
     width: 960px;
     padding: 10px;
 }
-/**
- * footer styles
- */
+
 #footer {
     background: #aaa;
-}
+}*/
 

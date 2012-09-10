@@ -28,16 +28,4 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-    <div id="container">
-        <header id="header">
-            Header Goes Here
-        </header>
-        <div id="global-nav" role="navigation">
-            <?php 
-                wp_nav_menu(array(
-                    'container'         => false,
-                    'theme_location'    => 'primary'
-                )); 
-            ?>
-            <div class="clearfix"></div>
-        </div>
+    

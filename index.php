@@ -9,15 +9,32 @@
  */
 ?>
 <?php get_header(); ?>
-        <div id="content-wrapper">
-            <div id="content" role="main">
-            <?php if ( have_posts() ) : ?>
-                <?php /* Beginning of the loop*/ ?>
-                <?php while ( have_posts() ) : the_post(); ?>
-                    <?php get_template_part( 'content', get_post_format() ); ?>
-                <?php endwhile; ?>
-            <?php endif; ?>
-            </div>
-            <?php get_sidebar(); ?>
+    <div id="global_nav">
+        <ul class="links">
+            <li><a href="#">Woodruff</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Health Sciences</a></li>
+            <li><a href="#">Law</a></li>
+            <li><a href="#">Marbl</a></li>
+            <li><a href="#">Oxford College</a></li>
+            <li><a href="#">Theology</a></li>
+            <li class="last"><a href="#">EMORY</a></li>
+        </ul>
+    </div>
+    <div id="page_wrapper">
+        <header class="page-header">
+            header
+        </header>
+        <div id="main_nav" role="navigation">
+            <?php 
+                wp_nav_menu(array(
+                    'container'         => false,
+                    'theme_location'    => 'primary'
+                )); 
+            ?>
         </div>
+        <div id="main_content">
+            testing content
+        </div>
+    </div>
 <?php get_footer(); ?>

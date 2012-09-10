@@ -42,7 +42,11 @@
     </div>
     <div id="page_wrapper">
         <header class="page-header">
-            header
+            <div id="logo">
+                <a href="/">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" />
+                </a>
+            </div>
         </header>
         <div id="main_nav" role="navigation">
             <?php 

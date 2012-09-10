@@ -1,0 +1,23 @@
+>>Structure
+    div#container - width: 980px
+        div#header - width: 960px; height: 111px;
+        div#globalNav 
+        div#utilityNav
+        div#content
+        div#footer
+
+>>Properties
+    div#container
+        width: 980px;
+
+    div#header
+        width: 960px;
+        height: 111px;
+
+    div#globalNav
+
+    ul#utilityNav
+
+    div#content
+        width: 
+

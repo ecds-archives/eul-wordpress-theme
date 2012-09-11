@@ -116,100 +116,94 @@ body {
  *  Main Content Area
  */
 
- #page_wrapper #main_content {
+ #page_wrapper #content {
     width: 940px;
     margin: 20px auto;
+}
+
+#main {
+    float: left;
+    width: 620px;
+}
+
+/**
+ * Sidebar
+ */
+#sidebar {
+    float: right;
+    width: 300px;
+}
+
+#sidebar aside.widget {
+    background-color: #F2F3F5;
+    padding:5px;
+}
+
+#sidebar h3.widget-title {
+    height: 18px;
+
+    color: #3E6280;
+    background-color: #DAE3EB;
+
+    padding: 6px 10px 0;
+    margin: 0 0 14px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 /**
  * Footer
  */
 
- #page_wrapper footer {
+#page_wrapper footer {
     width: 980px;
     margin: 0 auto;
- }
+}
 
- #page_wrapper footer #share_bar {
+#page_wrapper footer #share_bar {
     height: 42px;
     background-color: #CC9900;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     border-left: 1px solid #997300;
     border-right: 1px solid #997300;
- }
+}
 
- #page_wrapper footer #links {
+#page_wrapper footer #links {
     background-color: #002878;
     height: 120px;
- }
-
-/*#container {
-    width: 1000px;
-    margin: auto;
-}
-
-#header,
-#global-nav,
-#content-wrapper,
-#footer {
-    width: 980px;
-    margin: auto;
-}
-
-#header {
-    height: 111px;
-    background: #002878;
-    margin: auto;
 }
 
 
-#global-nav {
-    background: #d2962d;
-    color: #ffffff;
+
+/**
+ * article styles
+ */
+article.post {
+    color: #4C4C4C;
 }
 
-#global-nav .menu {
-    width: 95%;
-    margin: auto;
-}
-    
-#global-nav .menu-item { 
-    font-size: .75em;
-    color: #ffffff;
-    text-shadow: #734D00 1px 1px 2px;
-    text-transform: uppercase;
-    font-weight: normal;
-    
-    float: left;
+.post-header h1 {
+    font-size: 16px;
+    font-weight: bold;
 
-    border-right: 1px solid #997300;
+    margin: 10px 0;
 }
 
-#global-nav .menu-item:hover,
-#global-nav .current-menu-item {
-    background: #ffffff;
-    color: black;
-}
-
-#global-nav .first-menu-item {
-    border-left: 1px solid #997300;
-}
-
-#global-nav a {
-    color: inherit;
+.post-header h1 a {
     text-decoration: none;
-    display:block;   
-    padding: 8px 15px 8px 15px;
 }
 
-
-#content-wrapper {
-    width: 960px;
-    padding: 10px;
+.post-header h1 a:hover {
+    text-decoration: underline;
 }
 
-#footer {
-    background: #aaa;
-}*/
+.post-content p {
+    margin: 10px 0px;
+}
+
 

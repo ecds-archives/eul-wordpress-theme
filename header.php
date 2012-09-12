@@ -44,7 +44,7 @@
         <header class="page-header">
             <div id="logo">
                 <a href="/">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo-trimmed.png" />
                 </a>
             </div>
         </header>

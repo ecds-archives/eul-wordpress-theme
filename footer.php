@@ -13,5 +13,6 @@
             </div>
         </footer>
     </div><!-- /#page_wrapper -->
+<?php wp_footer(); ?>
 </body>
 </html>

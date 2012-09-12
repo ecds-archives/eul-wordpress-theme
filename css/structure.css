@@ -6,7 +6,7 @@ body {
 #page_wrapper {
     width: 1000px;
     margin: 0 auto;
-    background: url(http://web.library.emory.edu/sites/all/themes/libraryglobal/images/wrapper.gif) repeat-y;
+    background: url(../images/wrapper-bg.gif) repeat-y;
 }
 
 /**
@@ -106,7 +106,7 @@ body {
 }
 
 #page_wrapper #main_nav ul>li:first-of-type {
-    background-color: white;
+    background-color: #E8E8E8;
     border: none;
     border-left: 1px solid #997300;
     border-right: 1px solid #997300;
@@ -132,6 +132,7 @@ body {
 #sidebar {
     float: right;
     width: 300px;
+    box-shadow: #aaa 0px 0px 7px;
 }
 
 #sidebar aside.widget {
@@ -142,8 +143,8 @@ body {
 #sidebar h3.widget-title {
     height: 18px;
 
-    color: #3E6280;
-    background-color: #DAE3EB;
+    color: #F9F9F9;
+    background-color: #BDBFC1;
 
     padding: 6px 10px 0;
     margin: 0 0 14px;
@@ -185,6 +186,12 @@ body {
  */
 article.post {
     color: #4C4C4C;
+    background-color: #FFFFFF;
+
+    padding: 5px;
+    margin: 0 0 20px 0;
+
+    box-shadow: #AAA 0px 0px 7px;
 }
 
 .post-header h1 {

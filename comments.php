@@ -8,7 +8,7 @@
     <div id="comments">
     <?php if ( post_password_required() ) : ?>
         <p class="no-password"></php _e('This post is password protected. Enter the password to view any comments.', 'eultheme');</p>
-    </div>
+    </div><?php //early close if comments are pw protected ?>
 
     <?php 
             return;
@@ -19,7 +19,7 @@
     <?php if( have_comments() ) : ?>
 
     <ol class="comment-list">
-        <?php wp_list_comments(); ?>
+        <?php wp_list_comments( array('callback' => 'eul_comment') ); ?>
     </ol>
 
     <?php elseif (!comments_open() && !is_page() && post_type_supports(get_post_type(), 'comments') ) : ?>

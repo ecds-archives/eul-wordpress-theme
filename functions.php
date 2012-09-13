@@ -66,4 +66,22 @@ function eul_comment_fields($arg) {
 }
 add_filter('comment_form_default_fields', 'eul_comment_fields');
 
+/** 
+ * Template for comments
+ * Used as a callback by wp_list_comments() for displaying the comments.
+ */
+function eul_comment( $comment, $args, $depth ) {
+  $GLOBALS['comment'] = $comment;
+
+?>
+  <li <?php comment_class(); ?> id="li-comment<?php comment_ID(); ?>">
+
+    <article id="comment-<?php comment_ID(); ?>" class="comment">
+      <div class="comment-content"><?php comment_text(); ?></div>
+    </article>
+
+  </li>
+<?php
+}
+
 ?>

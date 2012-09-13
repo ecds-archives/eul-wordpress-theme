@@ -25,7 +25,9 @@
                         <p class="tags"><?php the_tags('<span class="tags-title">Tags:</span> ', ', ', ''); ?></p>
                     </footer>
                 </article>
-                <?php endwhile; else: ?>
+                <?php endwhile; ?>
+                <?php eul_content_nav('nav-below'); ?>
+                <?php else: ?>
 
                 <?php endif; ?>
                 <!-- /The Loop -->

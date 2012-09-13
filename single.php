@@ -12,12 +12,14 @@
             <div id="main" role="main">
                 <?php while( have_posts() ) : the_post(); ?>
 
+                <?php //TODO: add previous next posts link? ?>
+
                 <?php get_template_part('content', get_post_format()); ?>
 
                 <?php endwhile;  // end of hte loop?>
 
                 <?php //TODO: add comments here ?>
-                
+
             </div><!-- /#main <?php echo get_post_format(); ?>-->
 
             <?php get_sidebar(); ?>

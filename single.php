@@ -18,9 +18,9 @@
 
                 <?php endwhile;  // end of hte loop?>
 
-                <?php //TODO: add comments here ?>
+                <?php comments_template('', true); ?>
 
-            </div><!-- /#main <?php echo get_post_format(); ?>-->
+            </div><!-- /#main -->
 
             <?php get_sidebar(); ?>
 

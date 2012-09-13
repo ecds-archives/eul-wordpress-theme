@@ -193,7 +193,8 @@ a {
 /**
  * article styles
  */
-article.post {
+article.post,
+#comments {
     color: #4C4C4C;
     background-color: #FFFFFF;
 
@@ -203,7 +204,7 @@ article.post {
     box-shadow: #AAA 0px 0px 7px;
 }
 
-.post-header h1 {
+h1 {
     font-size: 22px;
     font-weight: bold;
 
@@ -235,14 +236,15 @@ article.post {
     margin: 10px 0px 5px 0px;
 }
 
-.post-content p {
+.post-content p
+.post-excerpt p {
     margin: 10px 0px;
 
     font-size: 14px;
 }
 
 /**
- *
+ * Pagination Styles
  */
 .nav-previous {
     float:left;

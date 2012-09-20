@@ -78,7 +78,7 @@ function eul_comment( $comment, $args, $depth ) {
 
     <article id="comment-<?php comment_ID(); ?>" class="comment">
       <div class="comment-meta">
-        
+        <?php echo get_avatar( $comment, $args['avatar_size'] ); ?>
       </div>
       <div class="comment-content"><?php comment_author_link(); ?> <?php comment_text(); ?></div>
       <footer>

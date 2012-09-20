@@ -20,7 +20,7 @@
     <meta charset="<?php bloginfo('charset'); ?>" />
     <meta name="viewport" content="width=device-width" />
 
-    <title><?php wp_title(); ?><?php bloginfo('name'); ?></title>
+    <title><?php bloginfo('name'); ?> | <?php wp_title(); ?></title>
 
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />

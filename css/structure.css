@@ -1,3 +1,11 @@
+article {
+    margin: 10px 0px;
+}
+
+footer {
+    margin: 5px 0;
+}
+
 h1 {
     margin: 15px 0px 5px 0px;
 }
@@ -197,6 +205,31 @@ article.post,
 .post-content p
 .post-excerpt p {
     margin: 10px 0px;
+}
+
+/**
+ * Comments
+ */
+article.comment {
+    margin: 10px 0;
+    padding: 5px;
+
+    border: 1px solid #666;
+    clear: both;
+}
+
+.comment-meta {
+    float: left;
+    width: 25%;
+}
+
+.comment-content {
+    float: right;
+    width: 70%;
+}
+
+.comment footer {
+    clear: both;
 }
 
 /**

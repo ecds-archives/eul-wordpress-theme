@@ -77,7 +77,12 @@ function eul_comment( $comment, $args, $depth ) {
   <li <?php comment_class(); ?> id="li-comment<?php comment_ID(); ?>">
 
     <article id="comment-<?php comment_ID(); ?>" class="comment">
+      <div class="comment-meta">
+        <?php comment_author_link(); ?>
+      </div>
       <div class="comment-content"><?php comment_text(); ?></div>
+      <footer>
+      </footer>
     </article>
 
   </li>

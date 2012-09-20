@@ -1,15 +1,5 @@
-body {
-    color: #4C4C4C;
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 12px;
-}
-
-a:visited {
-    color: #CC9900;
-}
-
-a {
-    color: #002878;
+h1 {
+    margin: 15px 0px 5px 0px;
 }
 
 #page_wrapper {
@@ -44,11 +34,6 @@ a {
     padding: 4px 12px 0 12px;
 
     display: block;
-
-    color: #CCCCCC;
-    font-size: 10px;
-    text-decoration: none;
-    text-transform: uppercase;
 }
 
 #global_nav .links a:hover {
@@ -152,17 +137,10 @@ a {
 #sidebar h3.widget-title {
     height: 18px;
 
-    color: #F9F9F9;
     background-color: #BDBFC1;
 
     padding: 6px 10px 0;
     margin: 0 0 14px;
-
-    font-size: 12px;
-    font-weight: bold;
-
-    text-decoration: none;
-    text-transform: uppercase;
 }
 
 /**
@@ -195,7 +173,6 @@ a {
  */
 article.post,
 #comments {
-    color: #4C4C4C;
     background-color: #FFFFFF;
 
     padding: 5px;
@@ -204,28 +181,9 @@ article.post,
     box-shadow: #AAA 0px 0px 7px;
 }
 
-h1 {
-    font-size: 22px;
-    font-weight: bold;
-
-    margin: 15px 0px 5px 0px;
-}
-
-.post-header h1 a {
-    color: #4C4C4C;
-    text-decoration: none;
-}
-
-.post-header h1 a:hover {
-    color: #002878;
-    text-decoration: underline;
-}
-
 .post p.meta,
 .post p.tags {
     display: inline-block;
-
-    color: #777;
 }
 
 .post p.meta {
@@ -239,8 +197,6 @@ h1 {
 .post-content p
 .post-excerpt p {
     margin: 10px 0px;
-
-    font-size: 14px;
 }
 
 /**

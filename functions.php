@@ -80,7 +80,10 @@ function eul_comment( $comment, $args, $depth ) {
       <div class="comment-meta">
         <?php echo get_avatar( $comment, $args['avatar_size'] ); ?>
       </div>
-      <div class="comment-content"><?php comment_author_link(); ?> <?php comment_text(); ?></div>
+      <div class="comment-content">
+        <h4><?php comment_author_link(); ?></h4>
+        <?php comment_text(); ?>
+      </div>
       <footer>
       </footer>
     </article>

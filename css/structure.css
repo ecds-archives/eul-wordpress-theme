@@ -149,7 +149,12 @@ h1 {
     background-color: #BDBFC1;
 
     padding: 6px 10px 0;
-    margin: 0 0 14px;
+    margin: 0 0 8px;
+}
+
+.widget ul li {
+    padding: 5px;
+    margin: 3px 0;
 }
 
 /**
@@ -221,12 +226,13 @@ article.comment {
 
 .comment-meta {
     float: left;
-    width: 35px;
 }
 
 .comment-content {
     float: left;
-    width: 70%;
+    max-width: 90%;
+
+    margin: 0 0 0 10px;
 }
 
 .comment footer {

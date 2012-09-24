@@ -220,7 +220,7 @@ article.comment {
     margin: 10px 0;
     padding: 5px;
 
-    border: 1px solid #666;
+    /*border: 1px solid #666;*/
     clear: both;
 }
 
@@ -237,6 +237,14 @@ article.comment {
 
 .comment footer {
     clear: both;
+}
+
+.comment-list {
+    border-bottom: 1px solid black;
+}
+
+.comment-list li{
+    /*border-top: 1px solid black;*/
 }
 
 /**

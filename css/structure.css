@@ -152,7 +152,9 @@ h1 {
     margin: 0 0 8px;
 }
 
-.widget ul li {
+.widget ul li,
+#monthly-archives li,
+#category-archives li {
     padding: 5px;
     margin: 3px 0;
 }
@@ -193,6 +195,10 @@ article.post,
     margin: 0 0 20px 0;
 
     box-shadow: #AAA 0px 0px 7px;
+}
+
+article header h1 {
+    border-bottom: 2px solid #002878;
 }
 
 .post p.meta,
@@ -256,6 +262,14 @@ article.comment {
 
 .nav-next {
     float: right;
+}
+
+#monthly-archives,
+#category-archives {
+    width: 45%;
+    float:left;
+
+    margin: 10px 0;
 }
 
 

@@ -23,5 +23,9 @@
     <?php endif; ?>
     <footer class="post-footer">
         <p class="tags"><?php the_tags('<span class="tags-title">Tags:</span> ', ', ', ''); ?></p>
+        <p>
+            This post currently has
+            <?php comments_number( 'no responses', 'one response', '% responses' ); ?>.
+        </p>
     </footer>
 </article>

@@ -1,0 +1,87 @@
+/**
+ * EULTheme Typography
+ */
+
+body {
+    color: #4C4C4C;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+}
+
+a:visited {
+    color: #CC9900;
+}
+
+a {
+    color: #002878;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#global_nav .links a {
+    color: #CCCCCC;
+    font-size: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#page_wrapper #main_nav li a {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#sidebar h3.widget-title {
+    color: #F9F9F9;
+    
+    font-size: 12px;
+    font-weight: bold;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: black 0.1em 0.1em 0.45em;
+}
+
+article.post,
+#comments {
+    color: #4C4C4C;
+}
+
+.post-header h1 a {
+    color: #4C4C4C;
+    text-decoration: none;
+}
+
+.post-header h1 a:hover {
+    color: #002878;
+    text-decoration: underline;
+}
+
+.post-content p,
+.post-excerpt p {
+    font-size: 14px;
+}
+
+.post p.meta,
+.post p.tags {
+    color: #777;
+}
+

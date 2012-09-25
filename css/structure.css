@@ -1,12 +1,20 @@
-body {
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 12px;
+article,
+p {
+    margin: 10px 0px;
+}
+
+footer {
+    margin: 5px 0;
+}
+
+h1 {
+    margin: 15px 0px 5px 0px;
 }
 
 #page_wrapper {
     width: 1000px;
     margin: 0 auto;
-    background: url(http://web.library.emory.edu/sites/all/themes/libraryglobal/images/wrapper.gif) repeat-y;
+    background: url(../images/wrapper-bg.gif) repeat-y;
 }
 
 /**
@@ -35,11 +43,6 @@ body {
     padding: 4px 12px 0 12px;
 
     display: block;
-
-    color: #CCCCCC;
-    font-size: 10px;
-    text-decoration: none;
-    text-transform: uppercase;
 }
 
 #global_nav .links a:hover {
@@ -106,7 +109,7 @@ body {
 }
 
 #page_wrapper #main_nav ul>li:first-of-type {
-    background-color: white;
+    background-color: #E8E8E8;
     border: none;
     border-left: 1px solid #997300;
     border-right: 1px solid #997300;
@@ -116,100 +119,157 @@ body {
  *  Main Content Area
  */
 
- #page_wrapper #main_content {
+ #page_wrapper #content {
     width: 940px;
     margin: 20px auto;
+}
+
+#main {
+    float: left;
+    width: 620px;
+}
+
+/**
+ * Sidebar
+ */
+#sidebar {
+    float: right;
+    width: 300px;
+    box-shadow: #aaa 0px 0px 7px;
+}
+
+#sidebar aside.widget {
+    background-color: #F2F3F5;
+    padding:5px;
+}
+
+#sidebar h3.widget-title {
+    height: 18px;
+
+    background-color: #BDBFC1;
+
+    padding: 6px 10px 0;
+    margin: 0 0 8px;
+}
+
+.widget ul li,
+#monthly-archives li,
+#category-archives li {
+    padding: 5px;
+    margin: 3px 0;
 }
 
 /**
  * Footer
  */
 
- #page_wrapper footer {
+#page_wrapper footer {
     width: 980px;
     margin: 0 auto;
- }
+}
 
- #page_wrapper footer #share_bar {
+#page_wrapper footer #share_bar {
     height: 42px;
     background-color: #CC9900;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     border-left: 1px solid #997300;
     border-right: 1px solid #997300;
- }
+}
 
- #page_wrapper footer #links {
+#page_wrapper footer #links {
     background-color: #002878;
     height: 120px;
- }
-
-/*#container {
-    width: 1000px;
-    margin: auto;
-}
-
-#header,
-#global-nav,
-#content-wrapper,
-#footer {
-    width: 980px;
-    margin: auto;
-}
-
-#header {
-    height: 111px;
-    background: #002878;
-    margin: auto;
 }
 
 
-#global-nav {
-    background: #d2962d;
-    color: #ffffff;
+
+/**
+ * article styles
+ */
+article.post,
+#comments {
+    background-color: #FFFFFF;
+
+    padding: 5px;
+    margin: 0 0 20px 0;
+
+    box-shadow: #AAA 0px 0px 7px;
 }
 
-#global-nav .menu {
-    width: 95%;
-    margin: auto;
+article header h1 {
+    border-bottom: 2px solid #002878;
 }
-    
-#global-nav .menu-item { 
-    font-size: .75em;
-    color: #ffffff;
-    text-shadow: #734D00 1px 1px 2px;
-    text-transform: uppercase;
-    font-weight: normal;
-    
+
+.post p.meta,
+.post p.tags {
+    display: inline-block;
+}
+
+.post p.meta {
+    margin: 5px 0px 10px 0px;
+}
+
+.post p.tags {
+    margin: 10px 0px 5px 0px;
+}
+
+.post-content p,
+.post-excerpt p {
+    margin: 10px 0px;
+}
+
+/**
+ * Comments
+ */
+article.comment {
+    margin: 10px 0;
+    padding: 5px;
+
+    /*border: 1px solid #666;*/
+    clear: both;
+}
+
+.comment-meta {
     float: left;
-
-    border-right: 1px solid #997300;
 }
 
-#global-nav .menu-item:hover,
-#global-nav .current-menu-item {
-    background: #ffffff;
-    color: black;
+.comment-content {
+    float: left;
+    max-width: 90%;
+
+    margin: 0 0 0 10px;
 }
 
-#global-nav .first-menu-item {
-    border-left: 1px solid #997300;
+.comment footer {
+    clear: both;
 }
 
-#global-nav a {
-    color: inherit;
-    text-decoration: none;
-    display:block;   
-    padding: 8px 15px 8px 15px;
+.comment-list {
+    border-bottom: 1px solid black;
 }
 
-
-#content-wrapper {
-    width: 960px;
-    padding: 10px;
+.comment-list li{
+    /*border-top: 1px solid black;*/
 }
 
-#footer {
-    background: #aaa;
-}*/
+/**
+ * Pagination Styles
+ */
+.nav-previous {
+    float:left;
+}
+
+.nav-next {
+    float: right;
+}
+
+#monthly-archives,
+#category-archives {
+    width: 45%;
+    float:left;
+
+    margin: 10px 0;
+}
+
 

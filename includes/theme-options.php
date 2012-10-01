@@ -4,6 +4,7 @@
  * @package EULTheme
  * @since EULTheme 0.3.0
  */
+
 global $sections;
 $sections = array(
     'header' => array(
@@ -101,9 +102,9 @@ function eul_theme_sections_callback($section) {
 }
 
 function eul_theme_options_callback($option) {
-    // $oenology_options = oenology_get_options();
+    $eultheme_options = get_option('eul_theme_options');
     // $option_parameters = oenology_get_option_parameters();
-    $optionname = $option['name'];
+    $optionname = $option['id'];
     $optiontitle = $option['title'];
     $optiondescription = $option['description'];
     $fieldtype = $option['type'];
@@ -114,7 +115,7 @@ function eul_theme_options_callback($option) {
     if ( 'text' == $fieldtype) {
         // for value echo wp_filter_nohtml_kses( $oenology_options[$optionname] ); 
         ?>
-        <input type="text" name="<?php echo $fieldname; ?>" value="" />
+        <input type="text" name="<?php echo $fieldname; ?>" value="<?php echo $eultheme_options[$optionname]; ?>" />
         <?php
     }
     else if ( 'select' == $fieldtype ) {
@@ -132,6 +133,23 @@ function eul_theme_options_callback($option) {
         </select>
         <?php
     } 
+}
+
+function eul_theme_options_validate($input) {
+    $options = get_option('eul_theme_options');
+    $valid_input= $input;
+
+    $submit = $input['submit'];
+    $reset = $input['reset'];
+
+    if ($submit) {
+        
+    }
+    else if ($reset) {
+
+    }
+
+    return $valid_input;
 }
 
 function pre($array) {

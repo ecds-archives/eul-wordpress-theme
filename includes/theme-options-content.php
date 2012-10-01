@@ -14,7 +14,7 @@
             settings_fields('eul_theme_options');
             do_settings_sections('theme_options');
         ?>
-        <input name="eul_theme_options[submit-<?php echo $tab; ?>]" type="submit" class="button-primary" value="<?php esc_attr_e('Save Settings', 'eultheme'); ?>" />
-        <input name="eul_theme_options[reset-<?php echo $tab; ?>]" type="submit" class="button-secondary" value="<?php esc_attr_e('Reset Defaults', 'eultheme'); ?>" />
+        <input name="eul_theme_options[submit]" type="submit" class="button-primary" value="<?php esc_attr_e('Save Settings', 'eultheme'); ?>" />
+        <input name="eul_theme_options[reset]" type="submit" class="button-secondary" value="<?php esc_attr_e('Reset Defaults', 'eultheme'); ?>" />
     </form>
 </div>  

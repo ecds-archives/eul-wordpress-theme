@@ -9,7 +9,8 @@ require_once('includes/theme-options.php');
 
 function eul_theme_setup() {
     register_nav_menus(array(
-        'primary' => 'The main page navigation in the header'
+        'primary' => 'The main page navigation in the header',
+        'footer' => 'Menu of links for the page footer'
     ));
 }
 add_action('after_setup_theme', 'eul_theme_setup');

@@ -5,9 +5,9 @@
  */
 ?>
         <footer>
-            <div id="share_bar">
+            <!-- <div id="share_bar">
 
-            </div>
+            </div> -->
             <div id="links">
 
             </div>

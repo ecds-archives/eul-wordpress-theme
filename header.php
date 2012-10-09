@@ -49,6 +49,9 @@ $eul_options = get_option('eul_theme_options');
                     <img src="<?php echo get_template_directory_uri(); ?>/images/logo-trimmed.png" />
                 </a>
             </div>
+            <div class="header-text">
+                <?php echo $eul_options['header_site_title']; ?>
+            </div>
         </header>
         <div id="main_nav" class="<?php echo $eul_options['header_nav_color']; ?>" role="navigation">
             <?php 

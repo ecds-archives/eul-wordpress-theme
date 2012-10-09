@@ -68,8 +68,14 @@ h1 {
 
 #page_wrapper header.page-header #logo {
     display: inline-block;
+    float: left;
     margin: 27px 0 0 25px;
     border-right: 1px solid white;
+}
+
+#page_wrapper header.page-header .header-text {
+    display: inline-block;
+    margin: 40px 0 0 10px;
 }
 
 /**

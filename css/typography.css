@@ -43,6 +43,13 @@ h4 {
     text-transform: uppercase;
 }
 
+#page_wrapper header.page-header .header-text {
+    color: white;
+    font-size: 18px;
+
+    text-transform: capitalize;
+}
+
 #page_wrapper #main_nav li a {
     text-align: center;
     text-transform: uppercase;

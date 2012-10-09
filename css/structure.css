@@ -107,9 +107,10 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+    color: white;
 }
 
-#page_wrapper #main_nav ul>li:first-of-type {
+#page_wrapper #main_nav ul .current-menu-item {
     background-color: #E8E8E8;
     border: none;
     border-left: 1px solid #997300;

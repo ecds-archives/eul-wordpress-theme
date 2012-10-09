@@ -49,6 +49,10 @@ h4 {
     text-decoration: none;
 }
 
+#page_wrapper #main_nav li.current-menu-item a {
+    color: #CC9900;
+}
+
 #sidebar h3.widget-title {
     color: #F9F9F9;
     

@@ -9,6 +9,8 @@
  * @filesource wp-content/themes/eultheme/header.php
  * @since EULTheme 0.1
  */
+
+$eul_options = get_option('eul_theme_options');
 ?><!DOCTYPE html>
 <!--[if IE 6]><html id="ie6" <?php language_attributes(); ?>><![endif]-->
 <!--[if IE 7]><html id="ie7" <?php language_attributes(); ?>><![endif]-->
@@ -30,14 +32,14 @@
 <body <?php body_class(); ?>>
     <div id="global_nav">
         <ul class="links">
-            <li><a href="#">Woodruff</a></li>
-            <li><a href="#">Business</a></li>
-            <li><a href="#">Health Sciences</a></li>
-            <li><a href="#">Law</a></li>
-            <li><a href="#">Marbl</a></li>
-            <li><a href="#">Oxford College</a></li>
-            <li><a href="#">Theology</a></li>
-            <li class="last"><a href="#">EMORY</a></li>
+            <li><a href="http://web.library.emory.edu">Woodruff</a></li>
+            <li><a href="http://business.library.emory.edu/">Business</a></li>
+            <li><a href="http://health.library.emory.edu/">Health Sciences</a></li>
+            <li><a href="http://www.law.emory.edu/library/">Law</a></li>
+            <li><a href="http://marbl.library.emory.edu/">Marbl</a></li>
+            <li><a href="http://oxford.library.emory.edu/">Oxford College</a></li>
+            <li><a href="http://www.pitts.emory.edu/">Theology</a></li>
+            <li class="last"><a href="http://www.emory.edu/">EMORY</a></li> 
         </ul>
     </div>
     <div id="page_wrapper">
@@ -47,8 +49,11 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/images/logo-trimmed.png" />
                 </a>
             </div>
+            <div class="header-text">
+                <?php echo $eul_options['header_site_title']; ?>
+            </div>
         </header>
-        <div id="main_nav" role="navigation">
+        <div id="main_nav" class="<?php echo $eul_options['header_nav_color']; ?>" role="navigation">
             <?php 
                 wp_nav_menu(array(
                     'container'         => false,

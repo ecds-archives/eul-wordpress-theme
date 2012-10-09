@@ -43,10 +43,21 @@ h4 {
     text-transform: uppercase;
 }
 
+#page_wrapper header.page-header .header-text {
+    color: white;
+    font-size: 18px;
+
+    text-transform: capitalize;
+}
+
 #page_wrapper #main_nav li a {
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+#page_wrapper #main_nav li.current-menu-item a {
+    color: #CC9900;
 }
 
 #sidebar h3.widget-title {
@@ -83,5 +94,21 @@ article.post,
 .post p.meta,
 .post p.tags {
     color: #777;
+}
+
+#page_wrapper footer a {
+    color: #D0CDC4;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#page_wrapper footer a:hover {
+    text-decoration: underline;
+}
+
+footer, 
+footer #links {
+    font-size: 9px;
+    color: #D0CDC4;;
 }
 

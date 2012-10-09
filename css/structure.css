@@ -68,7 +68,14 @@ h1 {
 
 #page_wrapper header.page-header #logo {
     display: inline-block;
+    float: left;
     margin: 27px 0 0 25px;
+    border-right: 1px solid white;
+}
+
+#page_wrapper header.page-header .header-text {
+    display: inline-block;
+    margin: 40px 0 0 10px;
 }
 
 /**
@@ -107,9 +114,10 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+    color: white;
 }
 
-#page_wrapper #main_nav ul>li:first-of-type {
+#page_wrapper #main_nav ul .current-menu-item {
     background-color: #E8E8E8;
     border: none;
     border-left: 1px solid #997300;

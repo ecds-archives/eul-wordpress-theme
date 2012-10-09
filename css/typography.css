@@ -85,3 +85,19 @@ article.post,
     color: #777;
 }
 
+#page_wrapper footer a {
+    color: #D0CDC4;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#page_wrapper footer a:hover {
+    text-decoration: underline;
+}
+
+footer, 
+footer #links {
+    font-size: 9px;
+    color: #D0CDC4;;
+}
+

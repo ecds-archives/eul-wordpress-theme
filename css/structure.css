@@ -5,6 +5,7 @@ p {
 
 footer {
     margin: 5px 0;
+    text-align:center;
 }
 
 h1 {
@@ -180,6 +181,28 @@ h1 {
 #page_wrapper footer #links {
     background-color: #002878;
     height: 65px;
+}
+
+#page_wrapper footer .menu {
+    padding-top: 15px;
+}
+
+#page_wrapper footer .menu-item {
+    border-left: 1px solid #D0CDC4;
+}
+
+#page_wrapper footer .first-menu-item {
+    border-left: none;
+}
+
+#page_wrapper footer .menu li {
+    display: inline;
+
+    padding: 0 5px 0 7px;
+}
+
+#page_wrapper footer #copyright {
+    margin: 5px 0 0 0;
 }
 
 

@@ -124,9 +124,8 @@ function eul_theme_options_callback($option) {
         ?>
         <select name="<?php echo $fieldname; ?>">
         <?php 
-        foreach ( $valid_options as $valid_option ) {
-            echo $valid_option;?>
-            <option value="<?php echo $valid_option['name']; ?>"><?php echo $valid_option['title']; ?></option>
+        foreach ( $valid_options as $valid_option ) { ?>
+            <option value="<?php echo $valid_option['value']; ?>"><?php echo $valid_option['title']; ?></option>
             <?php
         }
         ?>

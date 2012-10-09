@@ -228,7 +228,8 @@ article.post,
     box-shadow: #AAA 0px 0px 7px;
 }
 
-article header h1 {
+article header h1,
+h1#comments-title {
     border-bottom: 2px solid #002878;
 }
 

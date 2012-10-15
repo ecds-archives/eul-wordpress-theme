@@ -16,7 +16,7 @@ $eul_options = get_option('eul_theme_options');
 <!--[if IE 7]><html id="ie7" <?php language_attributes(); ?>><![endif]-->
 <!--[if IE 8]><html id="ie8" <?php language_attributes(); ?>><![endif]-->
 <!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> class="<?php echo $eul_options['header_nav_color']; ?>">
 <!--<![endif]-->
 <head>
     <meta charset="<?php bloginfo('charset'); ?>" />
@@ -53,7 +53,7 @@ $eul_options = get_option('eul_theme_options');
                 <?php echo $eul_options['header_site_title']; ?>
             </div>
         </header>
-        <div id="main_nav" class="<?php echo $eul_options['header_nav_color']; ?>" role="navigation">
+        <div id="main_nav" class="" role="navigation">
             <?php 
                 wp_nav_menu(array(
                     'container'         => false,

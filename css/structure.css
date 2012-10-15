@@ -228,7 +228,8 @@ article.post,
     box-shadow: #AAA 0px 0px 7px;
 }
 
-article header h1 {
+article header h1,
+h1#comments-title {
     border-bottom: 2px solid #002878;
 }
 
@@ -301,6 +302,12 @@ article.comment {
     float:left;
 
     margin: 10px 0;
+}
+
+/** grey option overrides **/
+
+html.grey #page_wrapper #main_nav {
+    background-color: #E4E6F0 !important;
 }
 
 

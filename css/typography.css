@@ -112,3 +112,8 @@ footer #links {
     color: #D0CDC4;;
 }
 
+/** grey overrides **/
+html.grey #page_wrapper #main_nav li a{
+    color: #002878 !important;
+}
+

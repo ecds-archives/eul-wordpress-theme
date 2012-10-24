@@ -46,14 +46,14 @@ $eul_options = get_option('eul_theme_options');
         <header class="page-header">
             <div id="logo">
                 <a href="/">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo-trimmed.png" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo-new.png" />
                 </a>
             </div>
             <div class="header-text">
                 <?php echo $eul_options['header_site_title']; ?>
             </div>
         </header>
-        <div id="main_nav" class="" role="navigation">
+        <div id="main_nav" role="navigation">
             <?php 
                 wp_nav_menu(array(
                     'container'         => false,

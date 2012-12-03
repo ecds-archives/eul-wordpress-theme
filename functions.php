@@ -26,7 +26,7 @@ function eul_add_first_and_last($output) {
 }
 add_filter('wp_nav_menu', 'eul_add_first_and_last');
 
-/** 
+/**
  * Register sidebars and widgets
  */
 function eul_widgets_init() {
@@ -61,15 +61,15 @@ endif;
  * customize display of the comments form
  */
 function eul_comment_fields($arg) {
-  $arg['author'] = '';
+  // $arg['author'] = '';
   $arg['url'] = '';
-  $arg['email'] = '';
+  // $arg['email'] = '';
 
   return $arg;
 }
 add_filter('comment_form_default_fields', 'eul_comment_fields');
 
-/** 
+/**
  * Template for comments
  * Used as a callback by wp_list_comments() for displaying the comments.
  */

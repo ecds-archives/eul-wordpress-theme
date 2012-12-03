@@ -11,6 +11,11 @@ $sections = array(
         'id' => 'header',
         'title' => __('Header', 'eultheme'),
         'description' => __('Options related to the header of the page')
+    ),
+    'footer' => array(
+        'id' => 'footer',
+        'title' => __('Footer', 'eultheme'),
+        'description' => __('Options related to the footer of the page')
     )
 );
 
@@ -41,6 +46,14 @@ $options = array(
             )
         ),
         'default' => 'gold'
+    ),
+    'google_analytics_code' => array(
+        'id' => 'google_analytics_code',
+        'title' => __('Google Analytics Code', 'eultheme'),
+        'description' => 'The analytics code provided by Google for your site',
+        'section' => 'footer',
+        'type' => 'textarea',
+        'default' => ''
     )
 );
 
@@ -50,23 +63,23 @@ function eul_theme_options_init() {
         'eul_theme_options', // Database option, see twentyeleven_get_theme_options()
         'eul_theme_options_validate' // The sanitization callback, see twentyeleven_theme_options_validate()
     );
-    
+
     global $sections;
     foreach ($sections as $section) {
         add_settings_section(
-            $section['id'], 
-            $section['title'], 
-            'eul_theme_sections_callback', 
+            $section['id'],
+            $section['title'],
+            'eul_theme_sections_callback',
             'theme_options');
     }
 
     global $options;
     foreach ($options as $option) {
         add_settings_field(
-            $option['id'], 
-            $option['title'], 
-            'eul_theme_options_callback', 
-            'theme_options', 
+            $option['id'],
+            $option['title'],
+            'eul_theme_options_callback',
+            'theme_options',
             $option['section'],
             $option
         );
@@ -109,11 +122,11 @@ function eul_theme_options_callback($option) {
     $optiondescription = $option['description'];
     $fieldtype = $option['type'];
     $fieldname = 'eul_theme_options[' . $optionname . ']';
-    
+
     // build out code for custom option types here
     // Output select form field markup
     if ( 'text' == $fieldtype) {
-        // for value echo wp_filter_nohtml_kses( $oenology_options[$optionname] ); 
+        // for value echo wp_filter_nohtml_kses( $oenology_options[$optionname] );
         ?>
         <input type="text" name="<?php echo $fieldname; ?>" value="<?php echo $eultheme_options[$optionname]; ?>" />
         <?php
@@ -123,7 +136,7 @@ function eul_theme_options_callback($option) {
         $valid_options = $option['valid_options'];
         ?>
         <select name="<?php echo $fieldname; ?>">
-        <?php 
+        <?php
         foreach ( $valid_options as $valid_option ) { ?>
             <option value="<?php echo $valid_option['value']; ?>"><?php echo $valid_option['title']; ?></option>
             <?php
@@ -131,7 +144,12 @@ function eul_theme_options_callback($option) {
         ?>
         </select>
         <?php
-    } 
+    }
+    else if ( 'textarea' == $fieldtype) {
+        ?>
+        <textarea name="<?php echo $fieldname; ?>" rows="10" cols="50"><?php echo $eultheme_options[$optionname]; ?></textarea>
+        <?php
+    }
 }
 
 function eul_theme_options_validate($input) {
@@ -142,7 +160,7 @@ function eul_theme_options_validate($input) {
     $reset = $input['reset'];
 
     if ($submit) {
-        
+
     }
     else if ($reset) {
 

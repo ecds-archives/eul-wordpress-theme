@@ -47,10 +47,18 @@ $options = array(
         ),
         'default' => 'gold'
     ),
-    'google_analytics_code' => array(
-        'id' => 'google_analytics_code',
-        'title' => __('Google Analytics Code', 'eultheme'),
-        'description' => 'The analytics code provided by Google for your site',
+    'header_analytics_block' => array(
+        'id' => 'header_analytics_block',
+        'title' => __('Header Analytics Block', 'eultheme'),
+        'description' => 'A setting to add extra javascript to the head (such as analytics code)',
+        'section' => 'header',
+        'type' => 'textarea',
+        'default' => ''
+    ),
+    'footer_analytics_block' => array(
+        'id' => 'footer_analytics_block',
+        'title' => __('Footer Analytics Block', 'eultheme'),
+        'description' => 'A setting to add extra javascript to the head (such as analytics code)',
         'section' => 'footer',
         'type' => 'textarea',
         'default' => ''

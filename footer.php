@@ -24,5 +24,5 @@ $eul_options = get_option('eul_theme_options');
     </div><!-- /#page_wrapper -->
 <?php wp_footer(); ?>
 </body>
-<?php echo $eul_options['google_analytics_code']; ?>
+<?php echo $eul_options['footer_analytics_block']; ?>
 </html>

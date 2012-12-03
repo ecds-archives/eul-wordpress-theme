@@ -28,6 +28,7 @@ $eul_options = get_option('eul_theme_options');
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
     <?php wp_head(); ?>
+    <?php echo $eul_options['header_analytics_block']; ?>
 </head>
 <body <?php body_class(); ?>>
     <div id="global_nav">
@@ -39,7 +40,7 @@ $eul_options = get_option('eul_theme_options');
             <li><a href="http://marbl.library.emory.edu/">Marbl</a></li>
             <li><a href="http://oxford.library.emory.edu/">Oxford College</a></li>
             <li><a href="http://www.pitts.emory.edu/">Theology</a></li>
-            <li class="last"><a href="http://www.emory.edu/">EMORY</a></li> 
+            <li class="last"><a href="http://www.emory.edu/">EMORY</a></li>
         </ul>
     </div>
     <div id="page_wrapper">
@@ -54,10 +55,10 @@ $eul_options = get_option('eul_theme_options');
             </div>
         </header>
         <div id="main_nav" role="navigation">
-            <?php 
+            <?php
                 wp_nav_menu(array(
                     'container'         => false,
                     'theme_location'    => 'primary'
-                )); 
+                ));
             ?>
         </div>

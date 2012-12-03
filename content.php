@@ -10,7 +10,7 @@
 <article class="post-<?php the_ID(); ?> post" role="article">
     <header class="post-header">
         <h1><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-        <p class="meta"><?php _e('Posted', 'eultheme'); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time(get_option('date_format')); ?></time> <?php _e('by', 'eultheme'); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e('filed under', 'eultheme'); ?> <?php the_category(', '); ?>.</p>
+        <p class="meta"><?php _e('Posted', 'eultheme'); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time(get_option('date_format')); ?></time> <?php _e('by', 'eultheme'); ?> <?php the_author_posts_link(); ?>  <?php if (get_the_category()) : ?><span class="amp">&</span><?php _e('filed under', 'eultheme'); ?> <?php the_category(', '); ?><?php endif; ?>.</p>
     </header><!-- /.post-header -->
     <?php if (is_search()) : ?>
     <section class="post-excerpt">
